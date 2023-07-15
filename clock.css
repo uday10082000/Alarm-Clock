@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: navajowhite;
+}
+
+.clock {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 2px solid royalblue;
+    border-radius: 123px;
+    color: red;
+
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: inline-block;
+    color: yellow;
+}
+
+.bg {
+    border-radius: 10px;
+    background-image: url("p2.jpg");
+    background-size: contain;
+}
+
+h2 {
+    text-align: center;
+    color: navajowhite;
+}
+
+#set-alarm:hover {
+    background-image: linear-gradient(to right, red, blue);
+}
+#alarms-list{
+    color: yellow;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="clock.css">
+</head>
+
+<body>
+    <div class="bg">
+        <h1>Alarm Clock</h1>
+        <div class="clock">
+            <span id="hours"></span> :
+            <span id="minutes"></span> :
+            <span id="seconds"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="alarm-hours">Hours:</label>
+            <input type="number" id="alarm-hours" class="form-control" min="0" max="12" step="1" value="0">
+        </div>
+        <div class="form-group">
+            <label for="alarm-minutes">Minutes:</label>
+            <input type="number" id="alarm-minutes" class="form-control" min="0" max="59" step="1" value="0">
+        </div>
+        <div class="form-group">
+            <label for="alarm-seconds">Seconds:</label>
+            <input type="number" id="alarm-seconds" class="form-control" min="0" max="59" step="1" value="0">
+        </div>
+        <div class="form-group">
+            <label for="alarm-am-pm">AM/PM:</label>
+            <select id="alarm-am-pm" class="form-control">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+        </div>
+        <button id="set-alarm" class="btn btn-primary">Set Alarm</button>
+
+        <h2>Alarms List</h2>
+        <ul id="alarms-list"></ul>
+    </div>
+    <script src="clock.js"></script>
+</body>
+
+</html>
